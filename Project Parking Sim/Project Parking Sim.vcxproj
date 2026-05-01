@@ -127,7 +127,12 @@
     <ClInclude Include="ParkingTicket.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ParkedCar.cpp" />
+    <ClCompile Include="ParkingMeter.cpp" />
     <ClCompile Include="ParkingMeter.h" />
+    <ClCompile Include="ParkingTicket.cpp" />
+    <ClCompile Include="PoliceOfficer.cpp" />
     <ClCompile Include="PoliceOfficer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
