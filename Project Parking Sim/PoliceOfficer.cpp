@@ -14,7 +14,7 @@ ParkingTicket* PoliceOfficer::inspectCar(ParkedCar car, ParkingMeter meter)
     if (parked > allowed)
     {
         int over = parked - allowed;
-        return new ParkingTicket(car, name, badge, over);
+        return new ParkingTicket(car, name, badge, over, allowed);
     }
 
     return nullptr;

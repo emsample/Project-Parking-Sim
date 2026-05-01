@@ -16,8 +16,8 @@ private:
     void calculateFine(int overMinutes);
 
 public:
-    ParkingTicket(ParkedCar c, string name, string badge, int overMinutes);
-
+    ParkingTicket(ParkedCar c, string name, string badge, int overMinutes, int purchasedTime);
+    int purchased;
     void printTicket() const;
 };
 

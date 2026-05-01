@@ -2,11 +2,12 @@
 #include <iostream>
 using namespace std;
 
-ParkingTicket::ParkingTicket(ParkedCar c, string name, string badge, int overMinutes)
+ParkingTicket::ParkingTicket(ParkedCar c, string name, string badge, int overMinutes, int purchasedTime)
     : car(c)
 {
     officerName = name;
     badgeNumber = badge;
+    purchased = purchasedTime;
     calculateFine(overMinutes);
 }
 
@@ -26,6 +27,8 @@ void ParkingTicket::printTicket() const
     cout << "\n--- PARKING TICKET ---\n";
     cout << car.getMake() << " " << car.getModel() << " (" << car.getColor() << ")\n";
     cout << "License: " << car.getLicense() << endl;
+    cout << "Minutes Parked: " << car.getMinutesParked() << endl;
+    cout << "Minutes Purchased: " << purchased << endl;
     cout << "Fine: $" << fine << endl;
     cout << "Officer: " << officerName << " (Badge " << badgeNumber << ")\n";
 }
